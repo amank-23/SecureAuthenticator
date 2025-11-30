@@ -9,22 +9,29 @@ A production-grade, multi-threaded authentication system built in C++ that simul
 Responsive web interface served directly by the C++ socket server, featuring live session timers and location detection.
 
 ![img.png](Snapshots/img.png)
+
 2. Desktop Client & Server Console
 
 The secure handshake process: Client requesting access (Left) and Server handling the transaction (Right).
 
 ![img_1.png](Snapshots/img_1.png)
+
 3. Email Security Alerts
 
 Automated transactional emails triggered by the Python microservice for different security events.
 
 Scenario A: Successful Login
+
 ![img_2.png](Snapshots/img_2.png)
 
 Scenario B: Brute Force Blocked (Critical)
+
 ![img_3.png](Snapshots/img_3.png)
+
 Scenario C: Session Timeout Warning
+
 ![img_4.png](Snapshots/img_4.png)
+
 🚀 Key Features
 
 Multi-Threaded Server Architecture: Simultaneously handles TCP connections (Desktop Client) and HTTP requests (Mobile Web Interface) using std::thread and non-blocking sockets.
